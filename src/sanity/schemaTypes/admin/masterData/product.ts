@@ -68,6 +68,13 @@ export const productSchema = defineType({
       description: "Insert product height here",
     }),
     defineField({
+      title:"Product Images",
+      name:"productImages",
+      type:"array",
+      description:"Insert product images here",
+      of:[{ type:"image" }]
+    }),
+    defineField({
       title: "Product Thumbnail Image",
       name: "thumbnailImage",
       type: "image",

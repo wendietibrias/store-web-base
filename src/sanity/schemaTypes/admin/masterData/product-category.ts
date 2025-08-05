@@ -11,6 +11,17 @@ const productCategorySchema = defineType({
       type: "string",
       description: "Insert product category name here",
     }),
+       defineField({
+      title: "Slug",
+      name: "slug",
+      type: "slug",
+      options: {
+        source: "name",
+        maxLength: 200,
+        slugify: (input: any) =>
+          input.toLowerCase().replace(/\s+/g, "-").slice(0, 200),
+      },
+    }),
     defineField({
       title: "Category Slug",
       name: "slug",
