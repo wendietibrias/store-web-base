@@ -21,14 +21,12 @@ export const productSchema = defineType({
       name: "name",
       type: "string",
       description: "Insert product name here",
-      validation: (rule: any) => rule.required(),
     }),
     defineField({
       title: "Product Sub Name",
       name: "subName",
       type: "string",
       description: "Insert product sub name here",
-      validation: (rule: any) => rule.required(),
     }),
     defineField({
       title: "Sub Deskripsi",
@@ -41,7 +39,6 @@ export const productSchema = defineType({
       type: "array",
       of: [{ type: "block" }],
       description: "Insert product description here",
-      validation: (rule: any) => rule.required(),
     }),
     defineField({
       title: "Product Width",

@@ -26,6 +26,7 @@ const testimonialSchema = defineType({
     defineField({
       title: "User Occupation",
       name: "occupation",
+      type:"string",
       description: "Insert user occupation here",
     }),
     defineField({

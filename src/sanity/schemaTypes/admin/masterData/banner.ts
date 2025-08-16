@@ -13,19 +13,18 @@ export const bannerSchema = defineType({
     }),
     defineField({
       title: "Slug",
-      name: "title",
+      name: "slug",
       type: "slug",
       options: {
         source: "name",
         maxLength: 200,
-        slugify: (input: any) =>
-          input.toLowerCase().replace(/\s+/g, "-").slice(0, 200),
+        slugify: (input: any) => input.toLowerCase().replace(/\s+/g, "-").slice(0, 200),
       },
     }),
     defineField({
       title: "Banner Activation",
       name: "isActive",
-      type: "booelan",
+      type: "boolean",
       initialValue: false,
     }),
     defineField({
