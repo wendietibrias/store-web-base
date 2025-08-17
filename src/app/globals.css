@@ -3,6 +3,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-primary-clr:#FF3D33;
+  --color-secondary:#FFE9CF;
+  --color-alternative-secondary:#28C700;
+  --color-dark-primary:#101010;
+  --color-dark-secondary:#485460;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -119,3 +127,24 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/** Global **/
+.navigation {
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation.active {
+  background-color:#fff;
+  border-bottom: solid 1px #f4f3f3;
+}
+
+.navigation.active {
+  color:#101010;
+}
+
+.navigation.active ul li {
+  color:#101010;
+}

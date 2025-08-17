@@ -1,3 +1,4 @@
+import advantageSchema from "./admin/masterData/advantage";
 import bannerSchema from "./admin/masterData/banner";
 import { productSchema } from "./admin/masterData/product";
 import productCategorySchema from "./admin/masterData/product-category";
@@ -8,6 +9,7 @@ export const schema = {
     productSchema,
     productCategorySchema,
     bannerSchema,
+    advantageSchema,
     testimonialSchema,
   ],
 }

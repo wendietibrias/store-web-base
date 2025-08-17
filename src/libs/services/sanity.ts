@@ -1,6 +1,6 @@
-import { createClient, defineLive } from "next-sanity";
+import { createClient } from "next-sanity";
 
-export const sanityClient = createClient({
+ const sanityClient = createClient({
     projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID, // Replace with your Sanity project ID
     dataset: 'production', // e.g., 'production'
     apiVersion: '2025-08-16', // Use the current date or a specific API version
@@ -8,8 +8,4 @@ export const sanityClient = createClient({
     // token: process.env.SANITY_API_TOKEN, // Optional: for authenticated requests
 });
 
-/** Define Live Revalidate */
-
-export const { sanityFetch,SanityLive } = defineLive({
-    client: sanityClient,
-});
+export default sanityClient;

@@ -1820,6 +1820,11 @@
   resolved "https://registry.npmjs.org/@portabletext/types/-/types-2.0.13.tgz"
   integrity sha512-5xk5MSyQU9CrDho3Rsguj38jhijhD36Mk8S6mZo3huv6PM+t4M/5kJN2KFIxgvt4ONpvOEs1pVIZAV0cL0Vi+Q==
 
+"@remixicon/react@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.npmjs.org/@remixicon/react/-/react-4.6.0.tgz"
+  integrity sha512-bY56maEgT5IYUSRotqy9h03IAKJC85vlKtWFg2FKzfs8JPrkdBAYSa9dxoUSKFwGzup8Ux6vjShs9Aec3jvr2w==
+
 "@rexxars/react-json-inspector@^9.0.1":
   version "9.0.1"
   resolved "https://registry.npmjs.org/@rexxars/react-json-inspector/-/react-json-inspector-9.0.1.tgz"
@@ -6666,6 +6671,11 @@ regjsparser@^0.12.0:
   integrity sha512-cnE+y8bz4NhMjISKbgeVJtqNbtf5QpjZP+Bslo+UqkIt9QPnX9q095eiRRASJG1/tz6dlNr6Z5NsBiWYokp6EQ==
   dependencies:
     jsesc "~3.0.2"
+
+remixicon@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.npmjs.org/remixicon/-/remixicon-4.6.0.tgz"
+  integrity sha512-bKM5odjqE1yzVxEZGJE7F79WHhNrJFIKHXR+GG+P1IWXn8AnJZhl8SbIRDJsNAvIqx4VPkNwjuHfc42tutMDpQ==
 
 require-directory@^2.1.1:
   version "2.1.1"

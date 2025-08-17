@@ -9,6 +9,7 @@ export const productSchema = defineType({
       title: "Slug",
       name: "slug",
       type: "slug",
+      description:"Product slug",
       options: {
         source: "name",
         maxLength: 200,
@@ -21,24 +22,31 @@ export const productSchema = defineType({
       name: "name",
       type: "string",
       description: "Insert product name here",
+      validation: (rule:any) => rule.required()
     }),
     defineField({
       title: "Product Sub Name",
       name: "subName",
       type: "string",
       description: "Insert product sub name here",
+      validation: (rule:any) => rule.required()
     }),
     defineField({
-      title: "Sub Deskripsi",
-      name: "subDescription",
-      type: "text",
+      title:"Product Price",
+      name:"price",
+      type:"number",
+      description:"Insert product price here",
+      initialValue:0
     }),
     defineField({
-      title: "Deskripsi Produk",
-      name: "description",
-      type: "array",
-      of: [{ type: "block" }],
-      description: "Insert product description here",
+      title:"Product Category",
+      type:"reference",
+      name:"category",
+      to: [
+        {
+           type:'productCategory'
+        }
+      ]
     }),
     defineField({
       title: "Product Width",
@@ -65,6 +73,21 @@ export const productSchema = defineType({
       description: "Insert product height here",
     }),
     defineField({
+      title: "Sub Deskripsi",
+      name: "subDescription",
+      type: "text",
+      description:"Insert product sub description here",
+      validation: (rule:any) => rule.required()
+    }),
+    defineField({
+      title: "Deskripsi Produk",
+      name: "description",
+      type: "array",
+      of: [{ type: "block" }],
+      description: "Insert product description here",
+      validation: (rule:any) => rule.required()
+    }),
+    defineField({
       title:"Product Images",
       name:"productImages",
       type:"array",
@@ -74,6 +97,7 @@ export const productSchema = defineType({
     defineField({
       title: "Product Thumbnail Image",
       name: "thumbnailImage",
+      description:"Insert Product thumbnail image here",
       type: "image",
       fields: [
         defineField({
