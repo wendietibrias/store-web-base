@@ -1,9 +1,6 @@
-import { IBaseSanity } from "./base";
+import { Product } from "../../../../sanity.types";
 
-export interface IProductSanity extends IBaseSanity {
-    title: string;
-    subTitle: string;
-    price: number;
-    description: string;
-    subDescription: string;
+export interface IProductProps {
+    product: Product;
+    loading: boolean;
 }

@@ -1,6 +1,7 @@
 import heroImage from "@/assets/images/landing/hero.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import ButtonCn from "../global/ButtonCn";
 
 const HeroSection = () => {
   return (
@@ -18,12 +19,12 @@ const HeroSection = () => {
             <h1 className="font-extrabold text-5xl">
               Safe,Fast,Reliable Shopping
             </h1>
-            <p className="text-[0.95rem] mb-7 mt-3 w-[70%] mx-auto">
+            <p className="text-[0.9rem] mb-7 mt-3 w-[70%] mx-auto">
               From daily essentials to unique finds, shop with ease and enjoy a
               seamless online experience,everything You Need, All in One Place.
             </p>
-           <Link href="/shop" className="cursor-pointer">
-            <button className="bg-primary-clr text-white rounded-full text-[0.8rem] font-bold py-2 px-4">Start Shopping</button>
+           <Link href="/shop" className="w-max cursor-pointer">
+             <ButtonCn type="button" title="Start Shopping"  isPrimary={true} mode="dark" size="default" loading={false} />
            </Link>
           </div>
         </div>

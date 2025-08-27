@@ -5,6 +5,19 @@ export const productSchema = defineType({
   name: "product",
   type: "document",
   fields: [
+     defineField({
+      title: "Product Name",
+      name: "name",
+      type: "string",
+      description: "Insert product name here",
+      validation: (rule:any) => rule.required()
+    }),
+    defineField({
+      title:"Show In Catalog",
+      type:"boolean",
+      initialValue: false,
+      name:"isShowInCatalog"
+    }),
     defineField({
       title: "Slug",
       name: "slug",
@@ -16,13 +29,6 @@ export const productSchema = defineType({
         slugify: (input: any) =>
           input.toLowerCase().replace(/\s+/g, "-").slice(0, 200),
       },
-    }),
-    defineField({
-      title: "Product Name",
-      name: "name",
-      type: "string",
-      description: "Insert product name here",
-      validation: (rule:any) => rule.required()
     }),
     defineField({
       title: "Product Sub Name",
