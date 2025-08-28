@@ -4,16 +4,19 @@ import { Label } from "../ui/label";
 interface TextareaCnProps {
     name: string;
     label: string;
+    register:any;
     placeholder?: string;
+    required: boolean;
+    validator: {}
 }
 
 const TextareaCn = (props: TextareaCnProps) => {
-    const { placeholder,name,label } = props;
+    const { placeholder,register,required,validator,name,label } = props;
 
     return (
         <div className="w-full">
             {label && <Label className="mb-3 font-semibold">{label}</Label>}
-            <Textarea name={name} placeholder={placeholder} />
+            <Textarea {...register(name, { required,validator })} name={name} placeholder={placeholder} />
         </div>
     ) 
 }
