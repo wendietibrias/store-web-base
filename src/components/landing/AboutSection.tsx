@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
     return (
-        <section className="w-full pt-30">
+        <section className="w-full @container pt-30">
             
             <div className="w-[85%] mx-auto mt-10 flex justify-between items-start">
                <div className="w-[50%]">

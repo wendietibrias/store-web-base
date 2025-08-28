@@ -15,7 +15,7 @@ interface IContractForm {
 const ContactSection = () => {
   const { register } = useForm<IContractForm>();
   return (
-    <section className="pb-38">
+    <section className="@container pb-38">
       <SectionTitle
         alignment="center"
         title="Get In Touch"

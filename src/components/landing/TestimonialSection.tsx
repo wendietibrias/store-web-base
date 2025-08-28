@@ -22,7 +22,7 @@ const TestimonialSection = () => {
   );
 
   return (
-    <section className="container pb-40">
+    <section className="@container pb-40">
       <SectionTitle
         badgeTitle="Testimonial"
         title="Testimonials"

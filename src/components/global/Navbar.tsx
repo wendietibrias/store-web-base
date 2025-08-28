@@ -43,17 +43,6 @@ const Navbar = () => {
           />
         </Link>
         <div className="flex items-center gap-x-10">
-          <ul
-            className={`flex items-center gap-x-5 ${scrollPosition > 100 ? "text-dark-primary" : "text-white"}`}
-          >
-            {navigationLinks.map((item, idx: number) => (
-              <li key={idx}>
-                <a className="text-[0.83rem] font-semibold" href={item.href}>
-                  {item.title}
-                </a>
-              </li>
-            ))}
-          </ul>
           <div className="nav-action-icon flex items-center gap-x-5">
             <Link href="/shop/cart">
               <button
