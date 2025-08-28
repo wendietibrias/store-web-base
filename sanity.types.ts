@@ -22,6 +22,7 @@ export type Testimonial = {
   username?: string;
   slug?: Slug;
   occupation?: string;
+  testimonial: string;
   rating?: number;
   picture?: {
     asset?: {

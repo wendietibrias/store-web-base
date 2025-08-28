@@ -37,6 +37,12 @@ const testimonialSchema = defineType({
       description: "Insert user rating here",
     }),
     defineField({
+      title:"User Testimonial",
+      name:"testimonial",
+      type:"text",
+      description:"Insert User Testimonnial Here"
+    }),
+    defineField({
       title: "User Picture",
       name: "picture",
       type: "image",

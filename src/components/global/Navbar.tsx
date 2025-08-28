@@ -7,7 +7,7 @@ import navigationLinks from "@/libs/constants/navigation-links";
 
 import { RiShoppingBasket2Fill, RiShoppingBagFill } from "@remixicon/react";
 import { useEffect, useState } from "react";
-import ButtonCn from "./ButtonCn";
+import ButtonCn from "./Form/ButtonCn";
 
 const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState<number>(0);

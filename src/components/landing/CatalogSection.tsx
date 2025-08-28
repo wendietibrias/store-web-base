@@ -2,12 +2,13 @@
 import SectionTitle from "../global/SectionTitle";
 import { fetchInCatalogProduct } from "@/libs/apis/sanity/product";
 import useSWR from "swr";
-import SkeletonCard from "../global/SkeletonCard";
+import SkeletonCard from "../global/Skeleton/SkeletonCard";
 import { Product } from "../../../sanity.types";
-import ProductCard from "../global/ProductCard";
+import ProductCard from "../global/Card/ProductCard";
+import { productKeys } from "@/assets/keys/product";
 
 const CatalogSection = () => {
-    const { data,isLoading } = useSWR('products', fetchInCatalogProduct);
+    const { data,isLoading } = useSWR(productKeys.catalogProduct, fetchInCatalogProduct);
 
     return (
         <section className="w-full @container py-20">

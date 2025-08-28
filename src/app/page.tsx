@@ -4,6 +4,7 @@ import AboutSection from "@/components/landing/AboutSection";
 import CatalogSection from "@/components/landing/CatalogSection";
 import ContactSection from "@/components/landing/ContactSection";
 import HeroSection from "@/components/landing/HeroSection";
+import TestimonialSection from "@/components/landing/TestimonialSection";
 
 export default async function Home() {
   return (
@@ -12,6 +13,7 @@ export default async function Home() {
        <HeroSection />
        <AboutSection />
        <CatalogSection/>
+       <TestimonialSection/>
        <ContactSection/>
        <Footer/>
     </div>

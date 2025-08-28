@@ -1,10 +1,10 @@
 "use client";
 
-import ButtonCn from "../global/ButtonCn";
-import InputCn from "../global/InputCn";
+import ButtonCn from "../global/Form/ButtonCn";
+import InputCn from "../global/Form/InputCn";
 import SectionTitle from "../global/SectionTitle";
 import { useForm } from "react-hook-form";
-import TextareaCn from "../global/TextareaCn";
+import TextareaCn from "../global/Form/TextareaCn";
 
 interface IContractForm {
   name: string;
