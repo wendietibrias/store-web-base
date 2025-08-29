@@ -12,7 +12,7 @@ interface InputCnProps {
 }
 
 const InputCn = (props: InputCnProps) => {
-  const { name, register, required, validator, label, placeholder, type } =
+  const { name, register,required, validator, label, placeholder, type } =
     props;
 
   return (

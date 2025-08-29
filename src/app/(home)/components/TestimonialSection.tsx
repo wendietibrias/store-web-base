@@ -1,11 +1,11 @@
 "use client";
 
 import useSWR from "swr";
-import SectionTitle from "../global/SectionTitle";
+import SectionTitle from "../../../components/global/SectionTitle";
 import { testimonialKeys } from "@/assets/keys/testimonial";
 import { fetchTestimonials } from "@/libs/apis/sanity/testimonial";
-import TestimonialCard from "../global/Card/TestimonialCard";
-import { Testimonial } from "../../../sanity.types";
+import TestimonialCard from "../../../components/global/Card/TestimonialCard";
+import { Testimonial } from "../../../../sanity.types";
 import {
   Carousel,
   CarouselContent,
@@ -13,7 +13,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import TestimonialSkeletonCard from "../global/Skeleton/TestimonialSkeleton";
+import TestimonialSkeletonCard from "../../../components/global/Skeleton/TestimonialSkeleton";
 
 const TestimonialSection = () => {
   const { data, isLoading } = useSWR(

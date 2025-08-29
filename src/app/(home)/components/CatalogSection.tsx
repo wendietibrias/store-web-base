@@ -1,10 +1,10 @@
 "use client"
-import SectionTitle from "../global/SectionTitle";
+import SectionTitle from "../../../components/global/SectionTitle";
 import { fetchInCatalogProduct } from "@/libs/apis/sanity/product";
 import useSWR from "swr";
-import SkeletonCard from "../global/Skeleton/SkeletonCard";
-import { Product } from "../../../sanity.types";
-import ProductCard from "../global/Card/ProductCard";
+import SkeletonCard from "../../../components/global/Skeleton/SkeletonCard";
+import { Product } from "../../../../sanity.types";
+import ProductCard from "../../../components/global/Card/ProductCard";
 import { productKeys } from "@/assets/keys/product";
 
 const CatalogSection = () => {

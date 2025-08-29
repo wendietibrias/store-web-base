@@ -1,7 +1,7 @@
 import heroImage from "@/assets/images/landing/hero.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import ButtonCn from "../global/Form/ButtonCn";
+import ButtonCn from "../../../components/global/Form/ButtonCn";
 
 const HeroSection = () => {
   return (
