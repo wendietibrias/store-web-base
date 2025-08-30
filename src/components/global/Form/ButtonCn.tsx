@@ -31,7 +31,7 @@ const ButtonCn = (props: ButtonCnProps) => {
     return (
       <Button
         size={size}
-        className={`${isFullWidth ? "w-full" : "w-max"} p-0 ${mode === "dark" ? "text-primary-clr" : "text-dark-primary"} font-bold`}
+        className={`cursor-pointer ${isFullWidth ? "w-full" : "w-max"} p-0 ${mode === "dark" ? "text-primary-clr" : "text-dark-primary"} font-bold`}
         variant="ghost"
       >
         {icon}
@@ -44,7 +44,7 @@ const ButtonCn = (props: ButtonCnProps) => {
     return (
       <Button
         variant="outline"
-        className={`${isFullWidth ? "w-full" : "w-max"}  rounded-full bg-transparent   border-2 ${isPrimary ? " border-primary-clr" : `bg-[${color}]`} ${mode === "dark" ? "text-primary-clr" : "text-dark-primary"}`}
+        className={`cursor-pointer ${isFullWidth ? "w-full" : "w-max"}  rounded-full bg-transparent   border-2 ${isPrimary ? " border-primary-clr" : `bg-[${color}]`} ${mode === "dark" ? "text-primary-clr" : "text-dark-primary"}`}
         size={size}
       >
         {icon}
@@ -57,7 +57,7 @@ const ButtonCn = (props: ButtonCnProps) => {
 
   return (
     <Button
-      className={`${isFullWidth ? "w-full" : "w-max"}  rounded-full ${isPrimary ? "bg-primary-clr" : `bg-[${color}]`} ${mode === "dark" ? "text-white" : "text-dark-primary"}`}
+      className={`cursor-pointer ${isFullWidth ? "w-full" : "w-max"}  rounded-full ${isPrimary ? "bg-primary-clr" : `bg-[${color}]`} ${mode === "dark" ? "text-white" : "text-dark-primary"}`}
       size={size}
     >
       {icon}
