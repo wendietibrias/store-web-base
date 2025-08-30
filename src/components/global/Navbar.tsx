@@ -8,7 +8,12 @@ import { RiShoppingBasket2Fill, RiShoppingBagFill } from "@remixicon/react";
 import { useEffect, useState } from "react";
 import ButtonCn from "./Form/ButtonCn";
 
-const Navbar = () => {
+interface NavbarProps {
+  isIndex?: boolean;
+}
+
+const Navbar = (props: NavbarProps) => {
+  const { isIndex } = props;
   const [scrollPosition, setScrollPosition] = useState<number>(0);
 
   useEffect(() => {
@@ -30,7 +35,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navigation w-full @container  fixed z-[99999] top-0 left-0 p-4 ${scrollPosition > 100 ? "active" : ""}`}
+      className={`${!isIndex ? "border-b border-gray-200" : ""} navigation w-full @container  fixed z-[99999] top-0 left-0 p-4 ${scrollPosition > 100 ? "active" : ""}`}
     >
       <div className="w-[90%] mx-auto flex justify-between items-center">
         <Link href="/">

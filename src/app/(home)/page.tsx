@@ -9,7 +9,7 @@ import TestimonialSection from "@/app/(home)/components/TestimonialSection";
 export default async function Home() {
   return (
     <div className="w-full min-h-screen">
-       <Navbar/>
+       <Navbar isIndex={true}/>
        <HeroSection />
        <AboutSection />
        <CatalogSection/>
