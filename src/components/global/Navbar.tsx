@@ -3,7 +3,6 @@
 import Image from "next/image";
 import logo from "../../assets/icons/global/resizedv2.png";
 import Link from "next/link";
-import navigationLinks from "@/libs/constants/navigation-links";
 
 import { RiShoppingBasket2Fill, RiShoppingBagFill } from "@remixicon/react";
 import { useEffect, useState } from "react";
@@ -64,7 +63,7 @@ const Navbar = () => {
               </button>
             </Link>
             <div className="flex items-center gap-x-2">
-              <Link href="/login">
+              <Link href="/auth/login">
                 <ButtonCn
                   size="sm"
                   title="Sign In"
@@ -75,7 +74,7 @@ const Navbar = () => {
                   mode="dark"
                 />
               </Link>
-              <Link href="/register">
+              <Link href="/auth/register">
                 <ButtonCn
                   size="sm"
                   title="Sign Up"

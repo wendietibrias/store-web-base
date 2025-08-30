@@ -4,14 +4,16 @@ import InputCn from "@/components/global/Form/InputCn";
 import { useForm } from "react-hook-form";
 import { IRegisterForm } from "../interfaces/register.interface";
 import ButtonCn from "@/components/global/Form/ButtonCn";
-import { Link } from "lucide-react";
+import Link from "next/link";
+
+
 
 const RegisterForm = () => {
   const { register } = useForm<IRegisterForm>();
   return (
     <form>
       <div className="flex  gap-y-4 flex-wrap justify-between items-start">
-        <div className="w-[48%]">
+        <div className="w-[49%]">
           <InputCn
             name="name"
             label="Name"
@@ -22,7 +24,7 @@ const RegisterForm = () => {
             type="text"
           />
         </div>
-        <div className="w-[48%]">
+        <div className="w-[49%]">
           <InputCn
             name="username"
             label="Username"
@@ -33,7 +35,7 @@ const RegisterForm = () => {
             type="text"
           />
         </div>
-        <div className="w-[48%]">
+        <div className="w-[49%]">
           <InputCn
             name="email"
             label="Email"
@@ -44,7 +46,7 @@ const RegisterForm = () => {
             type="email"
           />
         </div>
-        <div className="w-[48%]">
+        <div className="w-[49%]">
           <InputCn
             name="phone"
             label="Phone Number"
@@ -78,10 +80,10 @@ const RegisterForm = () => {
           />
         </div>
       </div>
-      <p className="mt-3 text-dark-secondary text-[0.85rem] text-center">
-        Don't Have Account?{" "}
+      <p className="mt-3  text-dark-secondary text-[0.85rem] text-center">
+        Already Have Account?{" "}
         <Link href="/auth/login" className="font-extrabold text-primary-clr">
-          Register
+          Login
         </Link>
       </p>
     </form>

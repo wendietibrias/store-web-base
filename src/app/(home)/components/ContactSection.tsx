@@ -52,6 +52,7 @@ const ContactSection = () => {
           <ButtonCn
             isPrimary={true}
             loading={false}
+            isFullWidth={true}
             mode="dark"
             size="sm"
             title="Submit"

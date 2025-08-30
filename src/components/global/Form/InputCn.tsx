@@ -17,7 +17,12 @@ const InputCn = (props: InputCnProps) => {
 
   return (
     <div className="w-full">
-      {label && <Label className="mb-3 font-semibold">{label}</Label>}
+      {label && (
+        <Label className="mb-3 font-semibold">
+          {label}
+          {required && <span className="text-[0.7rem] text-red-400">(Required*)</span>}
+        </Label>
+      )}
       <Input
         type={type}
         {...register(name, {
