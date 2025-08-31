@@ -50,7 +50,7 @@ const Navbar = (props: NavbarProps) => {
           <div className="nav-action-icon flex items-center gap-x-5">
             <Link href="/shop/cart">
               <button
-                className={`${scrollPosition > 100 ? "text-primary-clr" : "text-white"} relative flex gap-x-2 items-center text-[0.87rem]`}
+                className={`${!isIndex ? "text-primary-clr" : ""} ${scrollPosition > 100 ? "text-primary-clr" : "text-white"} relative flex gap-x-2 items-center text-[0.87rem]`}
               >
                 <RiShoppingBasket2Fill size={20} />
                 <span
