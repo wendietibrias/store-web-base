@@ -2,7 +2,7 @@
 
 import ButtonCn from "../../../components/global/Form/ButtonCn";
 import InputCn from "../../../components/global/Form/InputCn";
-import SectionTitle from "../../../components/global/SectionTitle";
+import SectionTitle from "../../../components/global/Public/SectionTitle";
 import { useForm } from "react-hook-form";
 import TextareaCn from "../../../components/global/Form/TextareaCn";
 
@@ -38,6 +38,15 @@ const ContactSection = () => {
             placeholder="Your Email"
             register={register}
             required={true}
+            validator={{}}
+            type="text"
+          />
+          <InputCn
+            name="phone"
+            label="Phone"
+            placeholder="Your Phone Number"
+            required={true}
+            register={register}
             validator={{}}
             type="text"
           />

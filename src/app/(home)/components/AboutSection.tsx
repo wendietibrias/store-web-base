@@ -1,4 +1,4 @@
-import SectionTitle from "../../../components/global/SectionTitle";
+import SectionTitle from "../../../components/global/Public/SectionTitle";
 import aboutImage from "@/assets/images/landing/about.jpg";
 import Image from "next/image";
 

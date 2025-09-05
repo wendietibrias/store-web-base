@@ -1,15 +1,24 @@
 "use client";
 
 import InputCn from "@/components/global/Form/InputCn";
-import { useForm } from "react-hook-form";
+import { useForm,SubmitHandler } from "react-hook-form";
 import { IRegisterForm } from "../interfaces/register.interface";
 import ButtonCn from "@/components/global/Form/ButtonCn";
 import Link from "next/link";
 
 
-
 const RegisterForm = () => {
-  const { register } = useForm<IRegisterForm>();
+  const { register,handleSubmit } = useForm<IRegisterForm>();
+
+
+  const onSubmit: SubmitHandler<IRegisterForm> = async (data) => {
+    try {
+ 
+    } catch(err){
+      
+    }
+  }
+
   return (
     <form>
       <div className="flex  gap-y-4 flex-wrap justify-between items-start">

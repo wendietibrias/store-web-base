@@ -1,5 +1,5 @@
-import Footer from "@/components/global/Footer";
-import Navbar from "@/components/global/Navbar";
+import Footer from "@/components/global/Public/Footer";
+import Navbar from "@/components/global/Public/Navbar";
 import AboutSection from "@/app/(home)/components/AboutSection";
 import CatalogSection from "@/app/(home)/components/CatalogSection";
 import ContactSection from "@/app/(home)/components/ContactSection";

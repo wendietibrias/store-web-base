@@ -1,8 +1,8 @@
 "use client";
 
 import useSWR from "swr";
-import SectionTitle from "../../../components/global/SectionTitle";
-import { testimonialKeys } from "@/assets/keys/testimonial";
+import SectionTitle from "../../../components/global/Public/SectionTitle";
+import { testimonialKeys } from "@/libs/keys/testimonial";
 import { fetchTestimonials } from "@/libs/apis/sanity/testimonial";
 import TestimonialCard from "../../../components/global/Card/TestimonialCard";
 import { Testimonial } from "../../../../sanity.types";

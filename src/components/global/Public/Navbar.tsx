@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import logo from "../../assets/icons/global/resizedv2.png";
+import logo from "@/assets/icons/global/resizedv2.png";
 import Link from "next/link";
 
 import { RiShoppingBasket2Fill, RiShoppingBagFill } from "@remixicon/react";
 import { useEffect, useState } from "react";
-import ButtonCn from "./Form/ButtonCn";
+import ButtonCn from "../Form/ButtonCn";
 
 interface NavbarProps {
   isIndex?: boolean;
@@ -50,7 +50,7 @@ const Navbar = (props: NavbarProps) => {
           <div className="nav-action-icon flex items-center gap-x-5">
             <Link href="/shop/cart">
               <button
-                className={`${!isIndex ? "text-primary-clr" : ""} ${scrollPosition > 100 ? "text-primary-clr" : "text-white"} relative flex gap-x-2 items-center text-[0.87rem]`}
+                className={`cursor-pointer ${!isIndex ? "text-primary-clr" : ""} ${scrollPosition > 100 ? "text-primary-clr" : "text-white"} relative flex gap-x-2 items-center text-[0.87rem]`}
               >
                 <RiShoppingBasket2Fill size={20} />
                 <span
@@ -62,7 +62,7 @@ const Navbar = (props: NavbarProps) => {
             </Link>
             <Link href="/shop/cart">
               <button
-                className={`${scrollPosition > 100 ? "text-primary-clr" : "text-white"} relative flex gap-x-2 items-center text-[0.87rem]`}
+                className={`cursor-pointer ${scrollPosition > 100 ? "text-primary-clr" : "text-white"} relative flex gap-x-2 items-center text-[0.87rem]`}
               >
                 <RiShoppingBagFill size={20} />
               </button>
